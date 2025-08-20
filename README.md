@@ -1,15 +1,3 @@
-import React, { useEffect, useMemo, useState } from "react";
-
-/**
- * Habit Tracker – neu strukturiert (React)
- * Tabs: Habits | Kalender | Statistik | Timer | Routinen
- * - Speicher: localStorage (alles bleibt erhalten)
- * - Timer: 1–90 Min Fokus, 5–20 Min Pause, Beschreibung editierbar
- * - Kalender: Monatsansicht + Tagesübersicht (24h) mit geplanten Habits (Uhrzeit)
- * - Routinen: Vorlagen mit mehreren Schritten, in Kalender einplanen
- * Farbwelt: Blau / Grau / Grün / Weiß (hell, angenehm)
- */
-
 // ---------- Utils ----------
 const startOfDayMs = (d) => { const x = new Date(d); x.setHours(0,0,0,0); return x.getTime(); };
 const todayKey = () => String(startOfDayMs(new Date()));
