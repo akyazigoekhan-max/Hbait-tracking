@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Habit Tracker</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#3b82f6"/>
+  <style>
+    body { font-family: sans-serif; margin:0; padding:0; background:#f9fafb; color:#111; }
+    header { background:#3b82f6; color:white; padding:1rem; text-align:center; }
+    nav { display:flex; justify-content:space-around; background:#e5e7eb; padding:0.5rem; }
+    nav button { background:none; border:none; font-size:1rem; }
+    .active { font-weight:bold; color:#3b82f6; }
+    .content { padding:1rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Habit Tracker</h1>
+  </header>
+  <nav>
+    <button onclick="showTab('habits')" id="tab-habits" class="active">Habits</button>
+    <button onclick="showTab('calendar')" id="tab-calendar">Kalender</button>
+    <button onclick="showTab('stats')" id="tab-stats">Statistik</button>
+    <button onclick="showTab('timer')" id="tab-timer">Timer</button>
+    <button onclick="showTab('routines')" id="tab-routines">Routinen</button>
+  </nav>
+  <div id="content" class="content">
+    <p>Willkommen beim Habit Tracker! Wähle einen Tab unten.</p>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
